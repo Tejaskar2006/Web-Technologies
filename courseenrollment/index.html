@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            margin-top: 10px;
+            display: inline;
+        }
+
+        #a {
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 97%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 80%;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Course Enrollment</h1>
+    <form action="" method="">
+        <label for="name">Student Name:</label>
+        <input id="a" type="text" id="name" name="name" required>
+
+        <label for="rollno">Roll No:</label>
+        <input id="a" type="text" id="rollno" name="rollno" required>
+
+        <label for="email">Email:</label>
+        <input id="a" type="email" id="email" name="email" required>
+
+        <label>Select Courses:</label><br>
+        <input type="checkbox" id="course1" name="courses" value="Web Development">
+        <label for="course1">Web Development</label><br>
+
+        <input type="checkbox" id="course2" name="courses" value="Data Science">
+        <label for="course2">Data Science</label><br>
+
+        <input type="checkbox" id="course3" name="courses" value="Machine Learning">
+        <label for="course3">Machine Learning</label><br>
+
+        <input type="checkbox" id="course4" name="courses" value="Theory of Computation">
+        <label for="course4">Theory of Computation</label><br>
+
+        <input type="checkbox" id="course5" name="courses" value="Computative Programming">
+        <label for="course5">Computative Programming</label><br><br>
+
+        <label>Mode of Study:</label><br>
+        <input type="radio" id="online" name="mode" value="Online">
+        <label for="online">Online</label><br>
+
+        <input type="radio" id="offline" name="mode" value="Offline">
+        <label for="offline">Offline</label><br>
+
+        <input type="radio" id="hybrid" name="mode" value="Hybrid">
+        <label for="hybrid">Hybrid</label><br>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: white;
+        }
+
+        #a {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+
+        #b {
+            background-color: green;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Class Timetable</h1>
+    <table>
+        <thead>
+            <tr>
+                <th id="a">DAY/HR</th>
+                <th>11:10AM TO 12:05PM</th>
+                <th>12:05PM TO 01:00PM</th>
+                <th>01:00PM TO 02:15PM</th>
+                <th>02:15PM TO 03:10PM</th>
+                <th>03:10PM TO 04:05PM</th>
+                <th>04:05PM TO 04:15PM</th>
+                <th>04:15PM To 05:10PM</th>
+                <th>05:10PM TO 06:05PM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="a">MON</td>
+                <td colspan="2">CP</td>
+                <!-- <td>CP</td> -->
+                <td id="b" rowspan="5">LUNCH BRACK</td>
+                <td colspan="2">ML LAB</td>
+                <!-- <td>ML LAB</td> -->
+                <td id="b" rowspan="5">BREAK</td>
+                <td>WT</td>
+                <td>PA(MOOC)</td>
+            </tr>
+            <tr>
+                <td id="a">TUE</td>
+                <td>CAO(MOOC)</td>
+                <td>ML</td>
+                <!-- <td>LUNCH BRACK</td> -->
+                <td>LIB</td>
+                <td>DM</td>
+                <!-- <td>BREAK</td> -->
+                <td colspan="2">CP</td>
+                <!-- <td>CP</td> -->
+            </tr>
+            <tr>
+                <td id="a">WED</td>
+                <td>PA(MOOC)</td>
+                <td>ML</td>
+                <!-- <td>LUNCH BRACK</td> -->
+                <td>DM</td>
+                <td>ML</td>
+                <!-- <td>BREAK</td> -->
+                <td colspan="2">QAVA</td>
+                <!-- <td>QAVA</td> -->
+            </tr>
+            <tr>
+                <td id="a">THU</td>
+                <td>WT</td>
+                <td>DM</td>
+                <!-- <td>LUNCH BRACK</td> -->
+                <td colspan="2">CP</td>
+                <!-- <td>CP</td> -->
+                <!-- <td>BREAK</td> -->
+                <td>LIB</td>
+                <td>CAO(MOOC)</td>
+            </tr>
+            <tr>
+                <td id="a">FRI</td>
+                <td>CAO(MOOC)</td>
+                <td>WT</td>
+                <!-- <td>LUNCH BRACK</td> -->
+                <td colspan="2">WT LAB</td>
+                <!-- <td>WT LAB</td> -->
+                <!-- <td>BREAK</td> -->
+                <td colspan="2">QAVA</td>
+                <!-- <td>QAVA</td> -->
+            </tr>
+        </tbody>
+    </table>

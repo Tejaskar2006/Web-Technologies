@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>score board</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        td {
+            background-color: white;
+        }
+
+        #a {
+            font-weight: bold;
+            background-color: rgb(188, 249, 188);
+        }
+
+        #b {
+            background-color: rgb(248, 182, 182);
+        }
+    </style>
+</head>
+<h1>Score Board</h1>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Team A</th>
+            <th>Team B</th>
+            <th>Total matches</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>played</td>
+            <td>20</td>
+            <td>30</td>
+            <td rowspan="3">50</td>
+        </tr>
+        <tr>
+            <td id="a">win</td>
+            <td id="a">15</td>
+            <td id="a">20</td>
+        </tr>
+        <tr>
+            <td id="b">losses</td>
+            <td id="b">5</td>
+            <td id="b">10</td>
+        </tr>
+
+    </tbody>
+</table>
+
+</html>

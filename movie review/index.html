@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review and Submission Form</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            padding: 1px 30px 30px 30px;
+            max-width: 750px;
+            margin: 20px auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: xx-large;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #dfe3e8;
+            margin: 40px 0;
+        }
+
+        form {
+            margin-top: 20px;
+            background-color: #f0f2f5;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Movie Review</h1>
+
+    <h2>Review: RRR </h2>
+
+    <h3>Synopsis</h3>
+    <p>S.S. Rajamouli's "RRR" (Rise, Roar, Revolt) is a cinematic tour de force, a bombastic and exhilarating
+        mythological
+        action-drama that has captivated audiences worldwide. The film is a fictionalized account of two real-life
+        Indian
+        revolutionaries, Komaram Bheem and Alluri Sitarama Raju, imagining a friendship between them before they
+        became
+        historical legends. With breathtaking action sequences, a powerful emotional core, and stellar performances
+        from its
+        leads, "RRR" is a cinematic experience that demands to be seen on the biggest screen possible.</p>
+
+    <h3>Our Rating</h3>
+    <p>★★★★☆</p>
+
+    <hr>
+
+    <h2>Leave Your Review for RRR</h2>
+
+    <form action="" method="">
+
+        <p>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="user_name" required>
+        </p>
+
+        <p>
+            <label for="rating">Your Rating:</label>
+            <select id="rating" name="user_rating">
+                <option value="5">★★★★★ (Excellent)</option>
+                <option value="4">★★★★☆ (Great)</option>
+                <option value="3">★★★☆☆ (Good)</option>
+                <option value="2">★★☆☆☆ (Fair)</option>
+                <option value="1">★☆☆☆☆ (Poor)</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="comment">Your Review:</label>
+            <textarea id="comment" name="user_comment" rows="6" required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Submit Review</button>
+        </p>
+
+    </form>
+
+</body>
+
+</html>
