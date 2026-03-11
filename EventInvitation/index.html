@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evening of Elegance - Invitation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: linear-gradient(160deg, #f4f0ff, #dbe7ff);
+        color: #1f1a2b;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .card {
+        background: #fff;
+        width: min(680px, 100%);
+        border-radius: 18px;
+        padding: 2.5rem;
+        box-shadow: 0 16px 40px rgba(31, 26, 43, 0.1);
+        display: grid;
+        gap: 2rem;
+      }
+
+      header {
+        text-align: center;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      header h1 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      header p {
+        color: #615c78;
+        font-size: 1.05rem;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        font-size: 0.95rem;
+        color: #403a57;
+      }
+
+      .meta span {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.55rem 0.95rem;
+        border-radius: 999px;
+        background: #f2f0ff;
+      }
+
+      .section-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #3c3456;
+        margin-bottom: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      ul {
+        list-style: none;
+        display: grid;
+        gap: 0.6rem;
+        color: #4a4462;
+        font-size: 1rem;
+      }
+
+      ul li strong {
+        display: block;
+        color: #271f3d;
+        font-weight: 600;
+      }
+
+      .cta {
+        display: grid;
+        gap: 1.2rem;
+        text-align: center;
+      }
+
+      .cta button {
+        border: none;
+        background: #5b4bdb;
+        color: #fff;
+        padding: 0.9rem 1.8rem;
+        border-radius: 999px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .cta button:hover,
+      .cta button:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(91, 75, 219, 0.25);
+      }
+
+      form {
+        display: grid;
+        gap: 1rem;
+        text-align: left;
+      }
+
+      label {
+        font-size: 0.9rem;
+        color: #5a5670;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid #dcd7f7;
+        border-radius: 12px;
+        padding: 0.75rem 0.9rem;
+        font-family: inherit;
+        font-size: 1rem;
+        background: #faf9ff;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #5b4bdb;
+        box-shadow: 0 0 0 4px rgba(91, 75, 219, 0.18);
+      }
+
+      textarea {
+        min-height: 110px;
+        resize: vertical;
+      }
+
+      .note {
+        font-size: 0.9rem;
+        color: #7a7691;
+      }
+
+      .message {
+        display: none;
+        text-align: center;
+        padding: 0.75rem 1rem;
+        border-radius: 12px;
+        background: #e6f8f1;
+        color: #2d7253;
+        font-weight: 600;
+      }
+
+      .message.show {
+        display: block;
+      }
+
+      @media (max-width: 520px) {
+        body {
+          padding: 1.5rem;
+        }
+
+        .card {
+          padding: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <p class="meta">
+          <span>Saturday · 20 December 2025</span>
+          <span>6:30 PM · The Aurora Hall</span>
+        </p>
+        <h1>Evening of Elegance</h1>
+        <p>
+          We are delighted to invite you to an intimate celebration filled with warm company, soulful music, and an exquisite seasonal dinner.
+        </p>
+      </header>
+
+      <section>
+        <h2 class="section-title">Event Highlights</h2>
+        <ul>
+          <li>
+            <strong>Welcome reception</strong>
+            Gather over sparkling refreshments and live piano melodies.
+          </li>
+          <li>
+            <strong>Candlelit dinner</strong>
+            Enjoy a three-course chef's menu inspired by winter gardens.
+          </li>
+          <li>
+            <strong>After-dinner toast</strong>
+            Raise a glass during our gratitude moment for friends and family.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="section-title">Location</h2>
+        <ul>
+          <li>
+            <strong>The Aurora Hall</strong>
+            58 Crescent Avenue · Midtown
+          </li>
+          <li>
+            Valet service begins at 6:00 PM. Festive cocktail attire encouraged.
+          </li>
+        </ul>
+      </section>
+
+      <div class="cta">
+        <div class="message" id="rsvpMessage">Thank you for your RSVP. We look forward to celebrating with you!</div>
+        <form id="rsvpForm">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div>
+            <label for="note">Message</label>
+            <textarea id="note" name="note" placeholder="Leave us a short note or dietary request"></textarea>
+          </div>
+          <button type="submit">Confirm Attendance</button>
+          <p class="note">Kindly RSVP by 5 December so we may prepare your place setting.</p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const rsvpForm = document.getElementById("rsvpForm");
+      const rsvpMessage = document.getElementById("rsvpMessage");
+
+      rsvpForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        rsvpForm.reset();
+        rsvpMessage.classList.add("show");
+        setTimeout(() => rsvpMessage.classList.remove("show"), 5000);
+      });
+    </script>
+  </body>
+</html>
